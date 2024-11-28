@@ -1,13 +1,15 @@
- <html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>motos benelli</title>
+    <title>Motos Benelli</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         header {
             background-color: #333;
@@ -33,6 +35,10 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffa500; /* Cambia el color al pasar el mouse */
         }
         section {
             padding: 20px;
@@ -49,16 +55,20 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1px;
-            position: fixed;
+            padding: 10px;
+            position: relative; /* Cambiado a relative */
             width: 100%;
-            bottom: 10;
+            bottom: 0; /* Cambiado a 0 */
+        }
+        img {
+            max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>concecionario de motos</h1>
+        <h1>Concesionario de Motos</h1>
     </header>
 
     <nav>
@@ -71,33 +81,32 @@
     </nav>
 
     <section id="home">
-        <h2>Bienvenido al concecionario de motos</h2>
+        <h2>Bienvenido al Concesionario de Motos</h2>
         <p>Descubre la excelencia y la innovación en cada modelo de Motos. Desde motos deportivas hasta motos de lujo, cada moto está diseñada para ofrecer una experiencia inigualable.</p>
-        <img src="moto1.jpg" alt="motos" style="width: 50%; height: auto;">
+        <img src="moto1.jpg" alt="Motos" />
     </section>
 
     <section id="models">
         <h2>Modelos Destacados</h2>
         <article>
-            <h3>TNT600 BENELLI</h3>
-            <p>BLBKABLABLALBALABLAB.</p>
-            <img src="moto3.jpg" alt="tnt600" style="width: 50%; height: auto;">
+            <h3>TNT600 Benelli</h3>
+            <p>Descripción del modelo TNT600. Este modelo destaca por su rendimiento y diseño innovador.</p>
+            <img src="moto3.jpg" alt="TNT600 Benelli" />
         </article>
         <article>
-            <h3>TNT1030 BENELLI</h3>
-            <p>BLABLABLABLABLABLABLABLA</p> 
-            <img src="moto2.jpg" alt="" style="width: 50%; height: auto;">
+            <h3>TNT1030 Benelli</h3>
+            <p>Descripción del modelo TNT1030. Un modelo que combina potencia y estilo.</p> 
+            <img src="moto2.jpg" alt="TNT1030 Benelli" />
         </article>
     </section>   
 
     <aside>
         <h2>Últimas Noticias</h2>
-        <p>hoy no abrimos</p> 
+        <p>Hoy no abrimos.</p> 
     </aside>
 
     <footer>
-        <p>&copy; 2024 concecionario jiji. Todos los derechos reservados.    
-        </p>
+        <p>&copy; 2024 Concesionario Jiji. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
